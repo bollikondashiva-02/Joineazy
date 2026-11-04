@@ -96,3 +96,62 @@ Data is stored locally in the browser and is not synchronized across different d
 ## Project Purpose
 
 This project was developed as part of the Joineazy Frontend Intern Assignment. It demonstrates practical skills in React development, responsive UI design, role-based dashboards, assignment management, and client-side data persistence.
+## Project Folder Structure
+
+```text
+Joineazy/
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+├── src/
+│   ├── assets/
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── Sidebar.jsx
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   └── AssignmentContext.jsx
+│   ├── pages/
+│   │   ├── AdminDashboard.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   └── StudentDashboard.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
+```
+
+## Component Architecture
+
+- **App.jsx:** Main application component that manages the login and signup views and displays the dashboard after authentication.
+- **Dashboard.jsx:** Displays the appropriate dashboard based on the logged-in user's role.
+- **Login.jsx:** Handles user login for Admin and Student roles.
+- **Signup.jsx:** Handles new student registration.
+- **AdminDashboard.jsx:** Allows administrators to manage assignments, assign students, and track submissions.
+- **StudentDashboard.jsx:** Allows students to view assignments, submit work, and track their progress.
+- **Navbar.jsx:** Provides the dashboard navigation header.
+- **Sidebar.jsx:** Provides navigation options and logout functionality.
+- **AuthContext.jsx:** Manages authentication, user information, registration, and login state.
+- **AssignmentContext.jsx:** Manages assignment data and student assignment submissions.
+
+## Key Design Decisions
+
+1. **Role-Based Access:** Separate Admin and Student dashboards provide role-specific functionality.
+2. **Context API:** React Context API is used to share authentication and assignment data across components.
+3. **LocalStorage:** Browser LocalStorage maintains user information, assignments, submission status, and preferences across page refreshes.
+4. **Responsive Design:** Tailwind CSS is used to create a responsive interface for desktop, tablet, and mobile devices.
+5. **Reusable Components:** Shared components such as Navbar and Sidebar help maintain consistent UI design.
+6. **Assignment Tracking:** Assignment status and completion progress help administrators monitor student submissions.
+7. **Client-Side Validation:** Form validation and due-date checks help prevent invalid assignment operations.
