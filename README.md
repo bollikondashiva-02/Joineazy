@@ -64,7 +64,7 @@ This project uses mock authentication and browser LocalStorage for demonstration
 1. Clone the repository:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/bollikondashiva-02/Joineazy.git
 ```
 
 2. Navigate to the project directory:
@@ -96,18 +96,14 @@ Data is stored locally in the browser and is not synchronized across different d
 ## Project Purpose
 
 This project was developed as part of the Joineazy Frontend Intern Assignment. It demonstrates practical skills in React development, responsive UI design, role-based dashboards, assignment management, and client-side data persistence.
+
 ## Project Folder Structure
 
 ```text
 Joineazy/
 ├── public/
-│   ├── favicon.svg
-│   └── icons.svg
 ├── src/
 │   ├── assets/
-│   │   ├── hero.png
-│   │   ├── react.svg
-│   │   └── vite.svg
 │   ├── components/
 │   │   ├── Navbar.jsx
 │   │   └── Sidebar.jsx
@@ -125,13 +121,13 @@ Joineazy/
 │   ├── index.css
 │   └── main.jsx
 ├── .gitignore
-├── eslint.config.js
 ├── index.html
 ├── package.json
 ├── package-lock.json
 ├── README.md
 └── vite.config.js
 ```
+
 
 ## Component Architecture
 
